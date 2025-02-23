@@ -32,7 +32,7 @@ function ExpenseListTable({expenseList , refreshData }) {
         <h2>{expenses.name}</h2>
         <h2>{expenses.amount}</h2>
         <h2>{expenses.createdAt}</h2>
-        <h2>
+        <h2 className='ml-8 md:ml-0'>
             <Trash onClick={() => deleteExpense(expenses)} className="text-red-600 cursor-pointer"/>
         </h2>
         </div>
